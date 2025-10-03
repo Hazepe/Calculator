@@ -1,0 +1,78 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+}
+
+.calculator {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+  padding: 25px;
+  width: 280px;
+}
+
+#display {
+  width: 92%;
+  height: 50px;
+  font-size: 1.5em;
+  text-align: right;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  background-color: #f7f7f7;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+button {
+  padding: 18px;
+  font-size: 1.3em;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.operator {
+  background-color: #ff7f50;
+  color: #fff;
+}
+
+.equals {
+  background-color: #32cd32;
+  color: #fff;
+  grid-row: span 2;
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+button:not(.operator):not(.equals):not(.Instagram) {
+  background-color: #e0e0e0;
+}
+
+.Instagram {
+  background-color: #E1306C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ig-logo {
+  width: 24px;
+  height: 24px;
+}
